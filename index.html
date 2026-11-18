@@ -270,33 +270,27 @@
                                             <stop offset="0%" stop-color="#38bdf8"/>
                                             <stop offset="100%" stop-color="#0369a1"/>
                                         </linearGradient>
+                                        <!-- Recorte circular para la foto -->
+                                        <clipPath id="fotoProfeClip">
+                                            <circle cx="110" cy="130" r="52"/>
+                                        </clipPath>
                                     </defs>
-                                    <!-- Anillos orbitales -->
-                                    <circle cx="110" cy="122" r="82" fill="none" stroke="rgba(217,119,6,0.3)" stroke-width="1.5" stroke-dasharray="6 6"/>
-                                    <circle cx="110" cy="122" r="66" fill="none" stroke="rgba(2,132,199,0.3)" stroke-width="1.5"/>
-                                    
-                                    <!-- Birrete Académico Superior -->
-                                    <polygon points="110,20 175,44 110,68 45,44" fill="url(#goldGrad)" stroke="#b45309" stroke-width="1.5"/>
-                                    <path d="M72,54 L72,74 C72,83 148,83 148,74 L148,54" fill="#1e3a8a" stroke="#f59e0b" stroke-width="2"/>
-                                    <line x1="175" y1="44" x2="175" y2="80" stroke="#d97706" stroke-width="2.5" stroke-linecap="round"/>
-                                    <circle cx="175" cy="83" r="4" fill="#f59e0b"/>
 
-                                    <!-- Núcleo Hexagonal de Arquitectura de Sistemas -->
-                                    <polygon points="110,86 150,109 150,155 110,178 70,155 70,109" fill="#ffffff" stroke="url(#cyanGrad)" stroke-width="3"/>
-                                    
-                                    <!-- Topología de Nodos Internos (4to y 6to ciclo conectados) -->
-                                    <line x1="110" y1="86" x2="110" y2="178" stroke="#0284c7" stroke-width="1.8" stroke-opacity="0.65"/>
-                                    <line x1="70" y1="109" x2="150" y2="155" stroke="#d97706" stroke-width="1.8" stroke-opacity="0.75"/>
-                                    <line x1="150" y1="109" x2="70" y2="155" stroke="#0284c7" stroke-width="1.8" stroke-opacity="0.65"/>
+                                    <!-- Anillos orbitales exteriores -->
+                                    <circle cx="110" cy="130" r="80" fill="none" stroke="rgba(217,119,6,0.35)" stroke-width="1.5" stroke-dasharray="6 6"/>
+                                    <circle cx="110" cy="130" r="65" fill="none" stroke="rgba(2,132,199,0.35)" stroke-width="1.5"/>
 
-                                    <!-- Nodos -->
-                                    <circle cx="110" cy="86" r="4.5" fill="#f59e0b"/>
-                                    <circle cx="70" cy="109" r="4.5" fill="#0284c7"/>
-                                    <circle cx="150" cy="109" r="4.5" fill="#0284c7"/>
-                                    <circle cx="110" cy="132" r="7" fill="#f59e0b" stroke="#ffffff" stroke-width="2"/>
-                                    <circle cx="70" cy="155" r="4.5" fill="#0284c7"/>
-                                    <circle cx="150" cy="155" r="4.5" fill="#0284c7"/>
-                                    <circle cx="110" cy="178" r="4.5" fill="#f59e0b"/>
+                                    <!-- Foto del Profesor recortada en círculo -->
+                                    <image href="Marce.png" x="58" y="78" width="104" height="104" preserveAspectRatio="xMidYMid slice" clip-path="url(#fotoProfeClip)" />
+
+                                    <!-- Marco circular dorado/celeste alrededor de la foto -->
+                                    <circle cx="110" cy="130" r="52" fill="none" stroke="url(#goldGrad)" stroke-width="3.5"/>
+
+                                    <!-- Birrete Académico Superior (encima de la foto) -->
+                                    <polygon points="110,16 175,40 110,64 45,40" fill="url(#goldGrad)" stroke="#b45309" stroke-width="1.5"/>
+                                    <path d="M72,50 L72,70 C72,79 148,79 148,70 L148,50" fill="#1e3a8a" stroke="#f59e0b" stroke-width="2"/>
+                                    <line x1="175" y1="40" x2="175" y2="76" stroke="#d97706" stroke-width="2.5" stroke-linecap="round"/>
+                                    <circle cx="175" cy="79" r="4" fill="#f59e0b"/>
                                 </svg>
                             </div>
                             <span class="mt-4 font-mono text-xs text-amber-800 font-semibold tracking-wider uppercase bg-amber-100 px-3.5 py-1.5 rounded-full border border-amber-300">
